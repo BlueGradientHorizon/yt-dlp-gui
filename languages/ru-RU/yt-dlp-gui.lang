@@ -1,81 +1,169 @@
-﻿AppName: yt-dlp-gui
+# Имя
+AppName: yt-dlp-gui
+# Окно - Главное
 Main:
-  # Базовые
+  # Меню сверху
+  About: О программе...
+  # Подписи вкладок
+  Main: Скачивание
+  Advance: Расширенные настройки
+  Options: Опции
+  # Вкладка скачивания
   Url: Ссылка
-  Title: Заголовок
+  Title: Название
   Desc: Описание
+  Live: Прямая трансляция
+  DownloadThumb: Скачать превью
+  # Вкладка скачивания - Кнопки
+  Analyze: Анализ
+  Browse: Выбрать
+  Download: Скачать
+  Record: Записать
+  Cancel: Отмена
+  Stop: Остановить
+  # Main Tab - Thumbnail
   SaveAs: Сохранить как...
   Thumbnail: Превью
-  About: О программе...
-  # Вкладка "Форматы"
-  Formats: Форматы
-  Chapters: Главы
-  ChaptersNone: "[Нет]"
-  ChaptersAll: "[Все]"
-  ChaptersSplite: "[Разделить по Главам]"
+  # Main Tab - Chapters
+  Chapters: Chapters
+  ChaptersNone: '[Нет]'
+  ChaptersAll: '[Все]'
+  ChaptersSplite: '[Разделить по главам]'
+  # Main Tab - Video
   Video: Видео
-  Audio: Аудио
-  Subtitle: Субтитры
-  SubtitleIgnore: "[Игнорировать]"
-  SubtitleNone: "[Нет]"
   VideoRes: Разрешение
   VideoDynamicRange: DR
   VideoFPS: FPS
   VideoExt: Расш.
   VideoCodec: Кодек
   VideoSize: Размер файла
-  Audio Sample Rate: ASR
+  # Main Tab - Audio
+  Audio: Аудио
+  AudioSampleRate: ASR
   AudioExt: Расш.
   AudioCodec: Кодек
   AudioSize: Размер файла
-  # Вкладка "Расширенные"
-  Advance: Расширенные
-  EmbedSubs: Встроить субтитры
-  EmbedSubsEnabled: Включено
-  TimeRange: Временной диапазон
-  TimeRangeHits: --download-sections
-  TimeRangeHelper: "*10:15-15:00"
-  # Вкладка "Настройки"
-  Options: Настройки
-  Notifications: Уведомления
-  NotificationsEnabled: Включены
-  AlwaysOnTop: Поверх всех окон
-  AlwaysOnTopEnabled: Включено
-  RememberWindowState: Запоминать
-  RememberWindowPosition: Позицию окна
-  RememberWindowSize: Размер окна
+  # Main Tab - Subtitle
+  Subtitle: Субтитры
+  SubtitleIgnore: '[Игнорировать]'
+  SubtitleNone: '[Нет]'
+  # Advance Tab - Configuration
+  Configuration: Конфигурация
+  ConfigurationNone: '[Нет]'
+  # Advance Tab - Proxy
   Proxy: Прокси
-  ProxyEnabled: Включены
-  ProxyHelper: "socks5://user:pass@127.0.0.1:1080/"
+  ProxyEnabled: Включено
+  ProxyHelper: socks5://user:pass@127.0.0.1:1080/
+  # Advance Tab - Cookie
   Cookie: Cookie
   CookieWhenNeeded: При необходимости
-  CookieNever: Никогда
+  CookieNever: Никогла
   CookieAlways: Всегда
   CookieAsk: Спрашивать
-  CookieUse: используя
-  Configuration: Configuration
-  ConfigurationNone: "[Нет]"
+  CookieUse: Использовать
+  # Advance Tab - Aria2
   Aria2: Aria2
   Aria2Enabled: Включено
-  # Метка
-  Live: LIVE
-  DownloadThumb: Скачать превью
-  # button
-  Analyze: Анализировать
-  Browse: Обзор
-  Download: Скачать
-  Record: Записать
-  Cancel: Отмена
-  Stop: Стоп
+  # Advance Tab - Embeds
+  Embeds: Встроить
+  EmbedsThumbnail: Превью
+  EmbedsChapters: Главы
+  EmbedsSubtitles: Субтитры
+  # Advance Tab - Time Range
+  TimeRange: Временной диапазон
+  TimeRangeHits: --download-sections
+  TimeRangeHelper: '*10:15-15:00'
+  # Advance Tab - Limit Rate
+  LimitRate: Limit Rate
+  LimitRateHelper: 50K или 4.2M
+  # Advance Tab - Mdified
+  Modified: Модифицировано
+  ModifiedModified: Дата изменения
+  ModifiedCreated: Дата создания
+  ModifiedUpload: Дата загрузки
+  # Options Tab - Notifications
+  Notifications: Уведомления
+  NotificationsEnabled: Включены
+  NotificationsSound: Звук уведомлений
+  SoundDefault: По умолчанию
+  SoundSystem: Системный
+  SoundBrowse: Выбрать...
+  # Options Tab - Always On Top
+  AlwaysOnTop: Поверх других окон
+  AlwaysOnTopEnabled: Включено
+  # Options Tab - Remember Window State
+  RememberWindowState: Запомнить состояние окна
+  RememberWindowPosition: Расположение
+  RememberWindowSize: Размер
+  Scale: Масштаб
+  # Options Tab - Automatically download
+  AutoDownload: Автоматическая загрузка
+  AutoDownloadAnalysed: После анализа
+  # Options Tab - Temporary folder
+  TemporaryFolder: Временная папка
+  TemporaryTarget: Целевая
+  TemporaryLocale: С локализациями
+  TemporarySystem: Системная
+  TemporaryBrowse: Выбрать...
+# Window - About
 About:
-  About: О программе...
-  Website: Вебсайт
-  Authors: Автор
-  # Расширенная информация может быть изменена произвольно
-  Extends:
-    Localization Author: lzrdblzzrd
-    Localization Website: https://lzrdblzzrd.xyz
+  About: О программе
+  Website: Веб-сайт
+  Authors: Авторы
+  # Extended information can be freely modified and there is no limit to the number of lines.
+  # Extends :
+  #   label1: content
+  #   label2: url
+  Extends: {}
+# Window - Release
 Releases:
   Releases: Выпуски
   Loading: Загрузка...
-  NoUpdated: Новых обновлений не найдено.
+  NoUpdated: Нет обновлений.
+# Dialog, Popups
+Dialog:
+  CookieRequired: Необходимы cookies, использовать?
+  FileExist: Файл существует. Перезаписать?
+  DownloadCompleted: Скачивание видео завершнено!
+  OpenFolder: Открыть папку
+  Close: Закрыть
+# File Types
+Files:
+  image: Image File
+  mkv: Matroska Multimedia Container
+  mp4: MPEG-4 Part 14
+  webm: WebM Container Format
+  mov: QuickTime Movie
+  flv: Flash Video
+  opus: Opus Interactive Audio Codec
+  aac: Advanced Audio Coding
+  m4a: MPEG-4 Audio Layer
+  mp3: MPEG-1 Audio Layer III
+  vorbis: Vorbis Audio Codec
+  alac: Apple Lossless Audio Codec
+  flac: Free Lossless Audio Codec
+  wav: Waveform Audio File Format
+  srt: SubRip Subtitle Format
+  ass: Advanced SubStation Alpha
+  vtt: WebVTT (Web Video Text Tracks)
+  lrc: Lyric File Format
+  ttml: Timed Text Markup Language
+  srv3: SRV3 Format
+  srv2: SRV2 Format
+  srv1: SRV1 Format
+  json3: JSON3 Format
+# Status Area Infomation
+Status:
+  Downloader: Downloader
+  Total: Всего
+  Speed: Скорость
+  Elapsed: Прошло
+  Connections: Соединений
+  Frame: Кадр
+  FPS: FPS
+  Time: Время
+  Status: Статус
+  Native: Native
+  Downloading: Скачивание
+  Downloaded: Скачано
+  Done: Завершено
